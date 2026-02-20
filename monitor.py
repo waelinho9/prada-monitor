@@ -59,10 +59,7 @@ try:
         old_stock = state.get(url)
 
         if old_stock == False and current_stock == True:
-
-            send_message(
-                f"🔥 PRADA CUP RESTOCK 🔥\n\n{url}"
-            )
+            send_message(f"🔥 PRADA CUP RESTOCK 🔥\n\n{url}")
 
         state[url] = current_stock
 
@@ -71,3 +68,5 @@ try:
 
 finally:
     driver.quit()
+
+print("Scan terminé")
